@@ -6,6 +6,12 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 module.exports = {
     entry: './src/client/index.js',
     mode: 'development',
+    output: {
+        path: path.join(__dirname, 'dist'),
+        filename: 'bundle.min.js',
+        libraryTarget: 'var',
+        library: 'Client'
+    },
     devtool: 'source-map',
     stats: 'verbose',
     module: {
