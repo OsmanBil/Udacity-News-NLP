@@ -1,3 +1,6 @@
+const dotenv = require('dotenv');
+dotenv.config();
+
 var path = require('path')
 const express = require('express')
 const mockAPIResponse = require('./mockAPI.js')
@@ -9,6 +12,11 @@ var json = {
     'message': 'this is a message',
     'time': 'now'
 }
+
+// You could call it aylienapi, or anything else
+var textapi = new aylien({
+    application_key: process.env.API_KEY
+  });
 
 const app = express()
 app.use(cors())
