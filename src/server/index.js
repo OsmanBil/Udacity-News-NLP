@@ -14,9 +14,10 @@ var json = {
 }
 
 // You could call it aylienapi, or anything else
-var textapi = new aylien({
-    application_key: process.env.API_KEY
-  });
+const textApi = {
+    apiKey: process.env.API_KEY
+  };
+
 
 const app = express()
 app.use(cors())
@@ -31,6 +32,12 @@ app.use(express.static('dist'))
 
 console.log(JSON.stringify(mockAPIResponse))
 
+
+app.get('/api/apikey', (req, res) => {
+    // API-Schlüssel an das Frontend senden
+    res.json({ apiKey: textApi.apiKey });
+  });
+
 app.get('/', function (req, res) {
     res.sendFile('dist/index.html')
 })
@@ -43,3 +50,4 @@ app.get('/test', function (req, res) {
 app.listen(8081, function () {
     console.log('Example app listening on port 8081!')
 })
+
