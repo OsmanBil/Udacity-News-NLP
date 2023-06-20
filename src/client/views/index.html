@@ -9,35 +9,33 @@
         <link rel="stylesheet" href="/styles/form.css">
         <link rel="stylesheet" href="/styles/footer.css">
     </head>
-
     <body>
-
         <header>
-            <div class="">
-                Logo
-            </div>
-            <div class="">
-                navigation
+            <div>
+               <p>NLP App</p> 
             </div>
         </header>
-
         <main>
             <section>
+              <p>The following article will be rated by MeaningCloud</p>
+            </section>
+            <section>
                 <form class="" onsubmit="return Client.handleSubmit(event)">
-                    <input id="name" type="text" name="input" value="" placeholder="Text">
-                    <input type="submit" name="" value="submit" onclick="return Client.handleSubmit(event)" onsubmit="return Client.handleSubmit(event)">
+                    <p id="name">Grocery price inflation has fallen to its lowest monthly rate this year but remains at its sixth highest level since 2008.</p>
+                    <input type="submit" name="" value="rate" onclick="return Client.handleSubmit(event)" onsubmit="return Client.handleSubmit(event)">
                 </form>
             <section>
-
             <section>
-                <strong>Form Results:</strong>
-                <div id="results"></div>
+                <strong><h3>NLP Results:</h3></strong>
+                <div >
+                    <div class="flex-row-marginRight"><p>Polarity:</p><p id="polarity"></p></div>
+                    <div class="flex-row-marginRight"><p>Subjectivity:</p><p id="subjectivity"></p> </div>
+                    <div class="flex-row-marginRight"><p>Text:</p><p id="textSnip"></p></div>
+                </div>
             </section>
         </main>
-
         <footer>
-            <p>This is a footer</p>
+            <p>&copy; 2023 Biltech. All rights reserved.</p>
         </footer>
-
     </body>
 </html>
