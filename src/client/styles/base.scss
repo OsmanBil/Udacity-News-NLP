@@ -6,6 +6,15 @@ body {
 
 main {
     flex: 2;
+    padding: 16px;
+}
+
+.flex-row-marginRight{
+    display: flex;
+    flex-direction: row;
+    p{
+        margin-right: 4px;
+    }
 }
 
 section {
