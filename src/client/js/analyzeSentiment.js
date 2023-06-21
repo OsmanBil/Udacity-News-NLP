@@ -7,13 +7,11 @@ function analyzeSentiment() {
     .then(response => response.json())
     .then(data => {
       const apiKey = data.apiKey; // get API-Key 
-      let formText = document.getElementById('name');
+      let formText = document.getElementById('name').value;
     
-      var paragraphContent = formText.textContent; // Save the content of the element in a variable
-
       const params = new URLSearchParams();
       params.append('key', apiKey);
-      params.append('txt', paragraphContent);
+      params.append('txt', formText);
       params.append('lang', 'en');
 
       return fetch(url, {
