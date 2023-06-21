@@ -18,6 +18,7 @@ To quickly see a demo of the project, follow these steps:
 
 5. Open your web browser and visit `http://localhost:8081` to see the project in action.
 
+# Table of Contents
 
 - [Project Title](#project-title)
 - [Quickstart/Demo](#quickstartdemo)
@@ -31,17 +32,21 @@ No Usage - its a Udacity learn project
 [(Back to top)](#table-of-contents)
 
 # Dependencies
+        "@babel/cli": "^7.22.5",
         "@babel/core": "^7.22.5",
         "@babel/preset-env": "^7.5.4",
         "babel-loader": "^8.0.6",
         "clean-webpack-plugin": "^3.0.0",
         "css-loader": "^3.6.0",
         "html-webpack-plugin": "^3.2.0",
+        "jest": "^29.5.0",
+        "jest-environment-jsdom": "^29.5.0",
         "mini-css-extract-plugin": "^1.4.1",
         "node-sass": "^4.14.1",
         "optimize-css-assets-webpack-plugin": "^5.0.4",
         "sass-loader": "^7.3.1",
         "style-loader": "^0.23.1",
-        "webpack-dev-server": "^3.7.2"
+        "webpack-dev-server": "^3.7.2",
+        "workbox-webpack-plugin": "^7.0.0"
 
 [(Back to top)](#table-of-contents)
