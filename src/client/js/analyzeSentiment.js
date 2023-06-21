@@ -51,4 +51,4 @@ function getPolarity(scoreTag) {
   }
 }
 
-export { analyzeSentiment };
+export { analyzeSentiment, getPolarity, ratingOutput };
